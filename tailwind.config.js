@@ -7,6 +7,10 @@ module.exports = {
       '44': '44px'
     },
     extend: {
+      strokeWidth: {
+        '3': '3',
+        '4': '4',
+      },
       keyframes: {
         wiggle: {
           "0%, 100%": { transform: "rotate(-3deg)" },
