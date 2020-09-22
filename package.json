@@ -1,0 +1,58 @@
+{
+  "name": "react-tailwind-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "5.1.1",
+    "@testing-library/react": "9.4.1",
+    "@testing-library/user-event": "10.0.0",
+    "react": "16.13.0",
+    "react-dom": "16.13.0",
+    "react-scripts": "3.4.0"
+  },
+  "scripts": {
+    "build:css": "postcss src/styles/tailwind.css -o src/styles/index.css",
+    "watch:css": "postcss src/styles/tailwind.css -o src/styles/index.css --watch",
+    "env:dev": "cross-env NODE_ENV=development",
+    "env:prod": "cross-env NODE_ENV=production",
+    "react-scripts:start": "react-scripts start",
+    "react-scripts:build": "react-scripts build",
+    "start": "run-p env:dev watch:css react-scripts:start",
+    "build": "run-s env:prod build:css react-scripts:build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.7.4",
+    "typescript": "~4.0.3",
+    "postcss-preset-env": "^6.7.0",
+    "cross-env": "^7.0.0",
+    "cssnano": "^4.1.10",
+    "postcss-cli": "^7.1.0",
+    "purgecss": "^2.0.6",
+    "tailwindcss": "^1.8.7",
+    "npm-run-all": "^4.1.5"
+  },
+  "keywords": [
+    "tailwind",
+    "tailwindcss",
+    "create-react-app",
+    "template"
+  ],
+  "description": ""
+}
